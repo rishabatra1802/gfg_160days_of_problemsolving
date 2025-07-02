@@ -3,8 +3,8 @@
 class Solution:
     #Function to rotate an array by d elements in counter-clockwise direction. 
     def rotateArr(self, arr, d):
-        #Your code here
         n=len(arr)
+        d=d%n
         temp=arr[:d]
         for i in range (n-d):
             arr[i]=arr[i+d]
